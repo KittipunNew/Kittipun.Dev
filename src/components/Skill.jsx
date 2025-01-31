@@ -1,17 +1,31 @@
-import { useContext, forwardRef } from "react";
+import { useContext, forwardRef, useEffect } from "react";
 import { ScrollContext } from "../Context/ScrollContext";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skill = forwardRef(function (props, ref) {
   const { skillsRef } = useContext(ScrollContext);
   const iconStyle =
     "flex flex-col justify-center items-center font-bold font-montserrat lg:text-xl";
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // ระยะเวลา animation (ms)
+      offset: 100, // ระยะห่างก่อนเริ่มแสดง animation
+      once: false, // เล่นแค่ครั้งเดียว (true) หรือเล่นทุกครั้งที่ scroll (false)
+    });
+  }, []);
+
   return (
     <div className="mt-20 text-sm w-full" ref={skillsRef}>
       <h1 className="mx-5 font-montserrat font-bold lg:text-lg lg:mx-12 w-52">
         TECHICAL SKILLS
       </h1>
 
-      <div className="pt-5 flex flex-col justify-center items-center gap-5 lg:gap-10">
+      <div
+        className="pt-5 flex flex-col justify-center items-center gap-5 lg:gap-10"
+        data-aos="fade-up"
+      >
         <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-20">
           {/* HTML ICON */}
           <div className={iconStyle}>

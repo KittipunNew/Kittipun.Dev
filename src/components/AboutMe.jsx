@@ -1,10 +1,20 @@
-import { useContext, forwardRef } from "react";
+import { useContext, forwardRef, useEffect } from "react";
 import { ScrollContext } from "../Context/ScrollContext";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutMe = forwardRef(function (props, ref) {
   const { aboutRef } = useContext(ScrollContext);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // ระยะเวลา animation (ms)
+      offset: 100, // ระยะห่างก่อนเริ่มแสดง animation
+      once: false, // เล่นแค่ครั้งเดียว (true) หรือเล่นทุกครั้งที่ scroll (false)
+    });
+  }, []);
+
   return (
-    <div ref={aboutRef} className="bg-white">
+    <div ref={aboutRef}>
       <h1 className="font-montserrat font-bold text-sm lg:text-lg mt-10 lg:mt-20 mb-10 mx-5 lg:mx-16">
         ABOUT ME
       </h1>
@@ -14,9 +24,13 @@ const AboutMe = forwardRef(function (props, ref) {
             src="https://scontent.fkdt2-1.fna.fbcdn.net/v/t39.30808-6/465138558_8613557188692050_7528697857588063327_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGoyZKAAZgPPKeWFRngxKayfwBj8IU4y65_AGPwhTjLrs_Dl_3sShb5CwbcVgtD1YOlpO9sRaeA-PIobzGnkXn7&_nc_ohc=RXw8vsDTvcQQ7kNvgFUtP5S&_nc_oc=Adi4GStd71CtFdqeuNOm8x7BqrY2zG9Q0Xc9b9OrQFn-SCTb4EAT_EOAPMx-J2YARIk&_nc_zt=23&_nc_ht=scontent.fkdt2-1.fna&_nc_gid=A87t4bQMzaeT2RGENobxa2t&oh=00_AYD34Eb7YEUTAVH_tNvciYVMLJIv0mai0IRXaxolVk-Xbg&oe=67A25268"
             alt=""
             className="w-52 mt-5 lg:w-72"
+            data-aos="fade-up"
           />
         </div>
-        <div className="lg:w-[60%] lg:px-20 xl:flex flex-col justify-center">
+        <div
+          className="lg:w-[60%] lg:px-20 xl:flex flex-col justify-center"
+          data-aos="fade-up"
+        >
           <h1 className="font-bogart text-2xl mt-5 lg:text-4xl">
             I am a Junior Full Stack Developer.
           </h1>
