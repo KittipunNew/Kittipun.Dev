@@ -4,7 +4,7 @@ import { ScrollContext } from "../Context/ScrollContext";
 const AboutMe = forwardRef(function (props, ref) {
   const { aboutRef } = useContext(ScrollContext);
   return (
-    <div ref={aboutRef}>
+    <div ref={aboutRef} className="bg-white">
       <h1 className="font-montserrat font-bold text-sm lg:text-lg mt-10 lg:mt-20 mb-10 mx-5 lg:mx-16">
         ABOUT ME
       </h1>

@@ -4,7 +4,7 @@ import { ScrollContext } from "../Context/ScrollContext";
 const Contact = forwardRef(function (props, ref) {
   const { contactRef } = useContext(ScrollContext);
   return (
-    <div className="mx-5 mt-16 flex flex-col gap-5" ref={contactRef}>
+    <div className="mx-5 mt-16 flex flex-col gap-5 bg-white" ref={contactRef}>
       <h1 className="font-montserrat font-bold text-3xl lg:text-5xl">
         Contact
       </h1>

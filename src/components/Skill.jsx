@@ -6,7 +6,7 @@ const Skill = forwardRef(function (props, ref) {
   const iconStyle =
     "flex flex-col justify-center items-center font-bold font-montserrat lg:text-xl";
   return (
-    <div className="mt-20 text-sm w-full" ref={skillsRef}>
+    <div className="mt-20 text-sm w-full bg-white" ref={skillsRef}>
       <h1 className="mx-5 font-montserrat font-bold lg:text-lg lg:mx-12 w-52">
         TECHICAL SKILLS
       </h1>
