@@ -3,7 +3,7 @@ import { ScrollContext } from '../Context/ScrollContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import HtmlIcon from '../Icons/HtmlIcon';
+import HtmlIcon from '../icons/HtmlIcon';
 import CssIcon from '../icons/CssIcon';
 import JavascriptIcon from './../icons/JavascriptIcon';
 import NodeIcon from './../icons/NodeIcon';
