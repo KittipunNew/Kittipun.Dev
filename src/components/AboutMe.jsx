@@ -2,6 +2,7 @@ import { useContext, forwardRef, useEffect } from 'react';
 import { ScrollContext } from '../Context/ScrollContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import aboutImg from '../assets/465138558_8613557188692050_7528697857588063327_n.jpg';
 
 const AboutMe = forwardRef(function (props, ref) {
   const { aboutRef } = useContext(ScrollContext);
@@ -22,7 +23,7 @@ const AboutMe = forwardRef(function (props, ref) {
       <div className="px-5 lg:flex justify-around">
         <div>
           <img
-            src="https://scontent.fkdt2-1.fna.fbcdn.net/v/t39.30808-6/465138558_8613557188692050_7528697857588063327_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGoyZKAAZgPPKeWFRngxKayfwBj8IU4y65_AGPwhTjLrs_Dl_3sShb5CwbcVgtD1YOlpO9sRaeA-PIobzGnkXn7&_nc_ohc=RXw8vsDTvcQQ7kNvgFUtP5S&_nc_oc=Adi4GStd71CtFdqeuNOm8x7BqrY2zG9Q0Xc9b9OrQFn-SCTb4EAT_EOAPMx-J2YARIk&_nc_zt=23&_nc_ht=scontent.fkdt2-1.fna&_nc_gid=A87t4bQMzaeT2RGENobxa2t&oh=00_AYD34Eb7YEUTAVH_tNvciYVMLJIv0mai0IRXaxolVk-Xbg&oe=67A25268"
+            src={aboutImg}
             alt=""
             className="w-52 mt-5 lg:w-72"
             data-aos="fade-up"
