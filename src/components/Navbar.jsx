@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { ScrollContext } from "../Context/ScrollContext";
-import "boxicons";
+import { useContext } from 'react';
+import { ScrollContext } from '../Context/ScrollContext';
+import 'boxicons';
 
 function Navbar() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const { scrollToSection, aboutRef, skillsRef, projectRef, contactRef } =
@@ -23,19 +23,23 @@ function Navbar() {
             className="dropdown-content menu bg-white rounded-box z-[1] w-52 p-2 shadow font-bogart font-bold md:text-xl md:gap-5"
           >
             <li>
-              <a onClick={scrollToTop}>Home</a>
+              <button onClick={scrollToTop}>Home</button>
             </li>
             <li>
-              <a onClick={() => scrollToSection(aboutRef)}>About</a>
+              <button onClick={() => scrollToSection(aboutRef)}>About</button>
             </li>
             <li>
-              <a onClick={() => scrollToSection(skillsRef)}>Skills</a>
+              <button onClick={() => scrollToSection(skillsRef)}>Skills</button>
             </li>
             <li>
-              <a>Project</a>
+              <button onClick={() => scrollToSection(projectRef)}>
+                Project
+              </button>
             </li>
             <li>
-              <a onClick={() => scrollToSection(contactRef)}>Contact</a>
+              <button onClick={() => scrollToSection(contactRef)}>
+                Contact
+              </button>
             </li>
           </ul>
         </div>

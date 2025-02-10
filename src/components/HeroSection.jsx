@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { ScrollContext } from "../Context/ScrollContext";
-import Profileimg from "../assets/2691251a-69b6-44a2-afe4-c8d3e578da44.jpg";
+import { useContext } from 'react';
+import { ScrollContext } from '../Context/ScrollContext';
+import Profileimg from '../assets/2691251a-69b6-44a2-afe4-c8d3e578da44.jpg';
 
 function HeroSection() {
   const { scrollToSection, aboutRef, skillsRef, projectRef, contactRef } =
@@ -13,9 +13,6 @@ function HeroSection() {
           {/* Navbar Desktop */}
           <nav className="hidden lg:flex items-center justify-between font-bogart text-2xl xl:text-3xl">
             <ul className="flex gap-10">
-              <li>
-                <button>Home</button>
-              </li>
               <li>
                 <button
                   onClick={() => {
@@ -54,22 +51,32 @@ function HeroSection() {
               </li>
             </ul>
             <div className="flex gap-5">
-              <button className="btn btn-ghost flex items-center justify-center p-0">
+              <a
+                href="https://github.com/KittipunNew?tab=repositories"
+                className="btn btn-ghost flex items-center justify-center p-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <box-icon
                   type="logo"
                   name="github"
                   size="lg"
                   animation="tada-hover"
                 ></box-icon>
-              </button>
-              <button className="btn btn-ghost flex items-center justify-center p-0">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kittipun-teerachokdumrongkul-348887330/"
+                className="btn btn-ghost flex items-center justify-center p-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <box-icon
                   type="logo"
                   name="linkedin-square"
                   size="lg"
                   animation="tada-hover"
                 ></box-icon>
-              </button>
+              </a>
             </div>
           </nav>
           <div className="flex flex-col gap-10 justify-around items-start h-full">
@@ -79,9 +86,14 @@ function HeroSection() {
                 <br />
                 I’m Kittipun
               </h1>
-              <button className="btn btn-wide font-bogart bg-black text-white rounded-xl">
+              <a
+                href="https://drive.google.com/file/d/1kFPC9pTiBkF2qiKiGiklbvlRSwZ5WPJZ/view?usp=sharing"
+                className="btn btn-wide font-bogart bg-black text-white rounded-xl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 DOWNLOAD CV
-              </button>
+              </a>
             </div>
             <div>
               <p className="font-montserrat mt-10 ml-1 text-xs md:text-base lg:text-lg">
@@ -99,7 +111,7 @@ function HeroSection() {
       <img
         src={Profileimg}
         alt=""
-        className="hidden lg:flex w-[40%] h-screen rounded-tl-3xl rounded-bl-3xl"
+        className="hidden lg:flex w-[40%] h-screen rounded-tl-3xl rounded-bl-3xl object-cover object-top"
       />
     </div>
   );

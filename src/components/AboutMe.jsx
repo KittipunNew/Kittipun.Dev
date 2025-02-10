@@ -1,10 +1,11 @@
-import { useContext, forwardRef, useEffect } from "react";
-import { ScrollContext } from "../Context/ScrollContext";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useContext, forwardRef, useEffect } from 'react';
+import { ScrollContext } from '../Context/ScrollContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutMe = forwardRef(function (props, ref) {
   const { aboutRef } = useContext(ScrollContext);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // ระยะเวลา animation (ms)
@@ -15,7 +16,7 @@ const AboutMe = forwardRef(function (props, ref) {
 
   return (
     <div ref={aboutRef}>
-      <h1 className="font-montserrat font-bold text-sm lg:text-lg mt-10 lg:mt-20 mb-10 mx-5 lg:mx-16">
+      <h1 className="font-montserrat font-bold text-xl lg:text-3xl mt-10 lg:mt-20 mb-10 mx-5 lg:mx-16">
         ABOUT ME
       </h1>
       <div className="px-5 lg:flex justify-around">
