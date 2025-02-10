@@ -1,53 +1,19 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import ProjectDetail1 from '../projectpage/ProjectDetail1';
+import ProjectDetail2 from '../projectpage/ProjectDetail2';
 
 const ProjectDetail = () => {
   const { id } = useParams();
 
-  const projects = [
-    {
-      id: 1,
-      name: 'โปรเจค 1',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 2,
-      name: 'โปรเจค 2',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 3,
-      name: 'โปรเจค 3',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 4,
-      name: 'โปรเจค 4',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 5,
-      name: 'โปรเจค 5',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 6,
-      name: 'โปรเจค 6',
-      description: 'รายละเอียดโปรเจค...',
-    },
-    {
-      id: 7,
-      name: 'โปรเจค 7',
-      description: 'รายละเอียดโปรเจค...',
-    },
-  ];
-
-  const project = projects.find((proj) => proj.id === parseInt(id));
-
-  return (
-    <div>
-      <h1>{project.name}</h1>
-      <p>{project.description}</p>
-    </div>
-  );
+  if (id === '1') {
+    return <ProjectDetail1 />;
+  } else if (id === '2') {
+    return <ProjectDetail2 />;
+  } else if (id === '3') {
+    return <ProjectDetail3 />;
+  } else {
+    return <p>ไม่พบข้อมูลโปรเจค</p>; // กรณีไม่พบ id ที่ตรงกัน
+  }
 };
+
 export default ProjectDetail;

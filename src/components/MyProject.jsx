@@ -12,8 +12,9 @@ const MyProject = forwardRef(function (props, ref) {
   const project = [
     {
       id: 1,
-      name: 'โปรเจค 1',
-      description: 'รายละเอียดโปรเจค...',
+      name: 'Online Furniture Ecommerce Project',
+      description:
+        'An Ecommerce platform for online furniture sales that allows users to view newly arrived products, browse the complete furniture catalog, and purchase furniture of interest.',
       img: ImageProject,
     },
     {
