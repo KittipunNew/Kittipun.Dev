@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { ScrollContext } from '../Context/ScrollContext';
 import 'boxicons';
 
@@ -48,22 +48,30 @@ function Navbar() {
           </ul>
         </div>
         <div className="flex gap-5">
-          <button className="btn btn-ghost flex items-center justify-center p-0">
+          <Link
+            to="https://github.com/KittipunNew?tab=repositories"
+            className="btn btn-ghost flex items-center justify-center p-0"
+            target="_Blank"
+          >
             <box-icon
               type="logo"
               name="github"
               size="lg"
               animation="tada-hover"
             ></box-icon>
-          </button>
-          <button className="btn btn-ghost flex items-center justify-center p-0">
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/kittipun-teerachokdumrongkul-348887330/"
+            className="btn btn-ghost flex items-center justify-center p-0"
+            target="_Blank"
+          >
             <box-icon
               type="logo"
               name="linkedin-square"
               size="lg"
               animation="tada-hover"
             ></box-icon>
-          </button>
+          </Link>
         </div>
       </nav>
     </>
