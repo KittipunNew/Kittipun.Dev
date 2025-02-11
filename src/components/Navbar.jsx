@@ -1,9 +1,13 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ScrollContext } from '../Context/ScrollContext';
 import 'boxicons';
 
 function Navbar() {
+  const navigate = useNavigate();
+
   const scrollToTop = () => {
+    navigate('/');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

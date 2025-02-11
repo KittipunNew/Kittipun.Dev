@@ -1,5 +1,4 @@
 import CardProject from './CardProject';
-import ImageProject from '../assets/project1/img1.png';
 import { ScrollContext } from '../Context/ScrollContext';
 import { useContext, forwardRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -11,6 +10,10 @@ const MyProject = forwardRef(function (props, ref) {
   const { projectRef } = useContext(ScrollContext);
 
   const { projects } = useContext(ProjectDataContext);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
 
   useEffect(() => {
     AOS.init({
@@ -31,7 +34,11 @@ const MyProject = forwardRef(function (props, ref) {
           data-aos="fade-up"
         >
           {projects.map((item) => (
-            <Link to={`/project/${item.id}`} key={item.id}>
+            <Link
+              to={`/project/${item.id}`}
+              key={item.id}
+              onClick={scrollToTop}
+            >
               <CardProject
                 img={item.imgCard}
                 name={item.name}

@@ -6,9 +6,10 @@ import imageProfile from '../assets/profile.jpg';
 function HeroSection() {
   const { scrollToSection, aboutRef, skillsRef, projectRef, contactRef } =
     useContext(ScrollContext);
+
   return (
     <div className="lg:flex justify-between bg-gray-50">
-      <div className="bg-white h-20 lg:hidden"></div>
+      <div className="h-20 lg:hidden"></div>
       <div className="px-5 py-7 flex flex-col gap-3 md:flex-row w-full">
         <div className="flex flex-col w-full">
           {/* Navbar Desktop */}
