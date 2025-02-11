@@ -34,7 +34,7 @@ const AboutMe = forwardRef(function (props, ref) {
           data-aos="fade-up"
         >
           <h1 className="font-bogart text-2xl mt-5 lg:text-4xl">
-            I am a Junior Full Stack Developer.
+            I am a Junior Software Developer.
           </h1>
           <p className="font-montserrat text-sm mt-5 lg:text-lg">
             I’m a software developer passionate about creating smooth and

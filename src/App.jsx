@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MyProject from './components/MyProject';
 import ProjectDetail from './components/ProjectDetail';
+import LayoutProjectDetail from './layout/layoutProjectDetail';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -27,7 +28,14 @@ function App() {
             </>
           }
         />
-        <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route
+          path="/project/:id"
+          element={
+            <LayoutProjectDetail>
+              <ProjectDetail />
+            </LayoutProjectDetail>
+          }
+        />
       </Routes>
     </Router>
   );

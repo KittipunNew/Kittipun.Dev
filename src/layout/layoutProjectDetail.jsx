@@ -1,11 +1,11 @@
-import NavbarProjectDetail from '../components/NavbarProjectDetail';
+import NavbarProjectDetail from '../page/projectdetailpage/NavbarProjectDetail';
 
-const layoutProjectDetail = ({ children }) => {
+const LayoutProjectDetail = ({ children }) => {
   return (
     <div>
       <NavbarProjectDetail />
-      <div>{children}</div>
+      <div className="container mx-auto p-4">{children}</div>
     </div>
   );
 };
-export default layoutProjectDetail;
+export default LayoutProjectDetail;

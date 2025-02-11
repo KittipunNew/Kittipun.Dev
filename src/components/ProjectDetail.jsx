@@ -1,6 +1,6 @@
-import { useParams, Link } from 'react-router-dom';
-import ProjectDetail1 from '../projectpage/ProjectDetail1';
-import ProjectDetail2 from '../projectpage/ProjectDetail2';
+import { useParams } from 'react-router-dom';
+import ProjectDetail1 from '../page/projectdetailpage/ProjectDetail1';
+import ProjectDetail2 from '../page/projectdetailpage/ProjectDetail2';
 
 const ProjectDetail = () => {
   const { id } = useParams();

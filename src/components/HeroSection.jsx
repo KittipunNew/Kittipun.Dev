@@ -97,7 +97,7 @@ function HeroSection() {
             </div>
             <div>
               <p className="font-montserrat mt-10 ml-1 text-xs md:text-base lg:text-lg">
-                JUNIOR FULL STACK DEVELOPER
+                JUNIOR SOFTWARE DEVELOPER
               </p>
             </div>
           </div>
