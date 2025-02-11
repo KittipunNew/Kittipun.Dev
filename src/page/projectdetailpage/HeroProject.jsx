@@ -13,7 +13,7 @@ const HeroProject = () => {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="bg-black h-14 lg:hidden"></div>
+      <div className="bg-white h-14 lg:hidden"></div>
       <div>
         <img src={project.imgCard} alt="" className="rounded-lg" />
       </div>
