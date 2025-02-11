@@ -94,7 +94,7 @@ const ProjectDetail1 = () => {
 
       <div className="w-full mt-20 flex flex-col gap-5 font-montserrat">
         <h1 className="text-xl md:text-3xl font-bold lg:ml-52">
-          Overview of the work I do
+          The scope of my work
         </h1>
         <div className="flex flex-col border-l-4 border-black lg:mx-52 px-5 text-sm lg:text-md">
           <div>
