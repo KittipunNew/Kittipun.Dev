@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { ScrollContext } from '../Context/ScrollContext';
 import Profileimg from '../assets/2691251a-69b6-44a2-afe4-c8d3e578da44.jpg';
+import imageProfile from '../assets/profile.jpg';
 
 function HeroSection() {
   const { scrollToSection, aboutRef, skillsRef, projectRef, contactRef } =
@@ -103,7 +104,7 @@ function HeroSection() {
           </div>
         </div>
         <img
-          src="https://scontent.fkdt2-1.fna.fbcdn.net/v/t39.30808-6/465175343_8613531775361258_2378083615676009182_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFUKk4fq0mOPfEOZUdcK_VEUPUAJROCoyhQ9QAlE4KjKG35VzssswPEKO9d_S3XtUAyOE8sK-mt6mUXH5vLK-5s&_nc_ohc=pXyto8kMemkQ7kNvgFvWJkD&_nc_oc=AdhwVWFMSvvkSKdMzswDGWFndXlLx7jx3gXZABr3rxUv0Q3yC2D-qzLIp1d-J1Qfce4&_nc_zt=23&_nc_ht=scontent.fkdt2-1.fna&_nc_gid=ABbawZp2qVAT8Z-8XyZRn54&oh=00_AYCeSaIM29-potnWeSPjnK-56xTsiHQxTIyxVPgfi9XM1Q&oe=67A17A9C"
+          src={imageProfile}
           alt=""
           className="rounded-3xl md:w-96 md:h-96 lg:hidden"
         />

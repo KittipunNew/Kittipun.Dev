@@ -28,7 +28,7 @@ const Skill = forwardRef(function (props, ref) {
 
   return (
     <div className="mt-20 text-sm w-full" ref={skillsRef}>
-      <div className="mx-5 lg:mx-16 font-montserrat w-full">
+      <div className="mx-5 lg:mx-16 font-montserrat">
         <h1 className="font-bold text-xl lg:text-3xl ">SKILLS</h1>
         <h1 className="w-full lg:text-lg">
           I like to take responsibility to craft aesthetic user experience using
