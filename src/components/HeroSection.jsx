@@ -89,7 +89,7 @@ function HeroSection() {
                 I’m Kittipun
               </h1>
               <a
-                href="https://drive.google.com/file/d/1kFPC9pTiBkF2qiKiGiklbvlRSwZ5WPJZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/10lgN9CB9T98Q0mjAbUAzvClsTz4y6BLn/view?usp=sharing"
                 className="btn btn-wide font-bogart bg-black text-white rounded-xl"
                 target="_blank"
                 rel="noopener noreferrer"
