@@ -220,6 +220,15 @@ const ProjectDetail1 = () => {
           <img src={image16} alt="" className="w-[300px]" />
         </div>
       </div>
+      <div className="flex flex-col mt-20 mb-20 border-l-4 border-black lg:mx-52 px-5 text-sm lg:text-md font-montserrat">
+        <p>
+          In summary, my responsibilities included converting the design into
+          code while adding interactive elements to make the website engaging. I
+          ensured the site was responsive across all devices and prepared some
+          of the structure to make it easier for the team to continue
+          development.
+        </p>
+      </div>
     </div>
   );
 };

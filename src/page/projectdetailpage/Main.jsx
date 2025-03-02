@@ -16,7 +16,7 @@ const Main = () => {
         <p>{project.overview}</p>
         <h1 className="text-3xl font-bold">Key Features</h1>
         <ul className="list-disc ml-5">
-          {projects[id - 1].keyFeatures.map((item, index) => (
+          {project.keyFeatures.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
@@ -24,7 +24,7 @@ const Main = () => {
       <div className="border-2 w-full lg:w-[30%] lg:ml-10 p-5 rounded-md">
         <h1 className="text-3xl font-bold mb-3">Technologies Used</h1>
         <ul className="flex flex-wrap gap-2">
-          {projects[id - 1].technologies.map((item, index) => (
+          {project.technologies.map((item, index) => (
             <li key={index} className="badge badge-neutral">
               {item}
             </li>
