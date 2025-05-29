@@ -34,10 +34,10 @@ const AboutMe = forwardRef(function (props, ref) {
           data-aos="fade-up"
         >
           <h1 className="font-bogart text-2xl mt-5 lg:text-4xl">
-            I am a Junior Software Developer.
+            I am a Full Stack Developer.
           </h1>
           <p className="font-montserrat text-sm mt-5 lg:text-lg">
-            I’m a software developer passionate about creating smooth and
+            I’m a full-stack developer passionate about creating smooth and
             dynamic web experiences, especially in building full-stack
             applications using the MERN Stack (MongoDB, Express, ReactJS,
             Node.js). I also have a strong foundation in front-end technologies
