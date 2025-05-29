@@ -89,7 +89,7 @@ function HeroSection() {
                 I’m Kittipun
               </h1>
               <a
-                href="https://drive.google.com/file/d/10lgN9CB9T98Q0mjAbUAzvClsTz4y6BLn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1HRYS6MBTTvmk5_pClBI6QOvg9D7f2lPD/view?usp=sharing"
                 className="btn btn-wide font-bogart bg-black text-white rounded-xl"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ function HeroSection() {
             </div>
             <div>
               <p className="font-montserrat mt-10 ml-1 text-xs md:text-base lg:text-lg">
-                JUNIOR FULLSTACK DEVELOPER
+                JUNIOR FULL STACK DEVELOPER
               </p>
             </div>
           </div>
