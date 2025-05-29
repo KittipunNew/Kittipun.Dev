@@ -35,6 +35,11 @@ const HeroProject = () => {
           Source Code
         </Link>
       </div>
+
+      <h1 className="font-medium text-yellow-700 bg-yellow-100 rounded px-3 py-2">
+        When accessing the website, it may take a moment to wait for the
+        back-end to respond. This process may take 2–3 minutes.
+      </h1>
     </div>
   );
 };
