@@ -9,8 +9,6 @@ const ProjectDetail = () => {
     return <ProjectDetail1 />;
   } else if (id === '2') {
     return <ProjectDetail2 />;
-  } else if (id === '3') {
-    return <ProjectDetail3 />;
   } else {
     return <p>ไม่พบข้อมูลโปรเจค</p>; // กรณีไม่พบ id ที่ตรงกัน
   }

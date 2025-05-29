@@ -25,7 +25,7 @@ const MyProject = forwardRef(function (props, ref) {
 
   return (
     <div className="flex flex-col gap-10" ref={projectRef}>
-      <h1 className="mx-5 lg:mx-16 font-montserrat font-bold text-xl lg:text-3xl">
+      <h1 className="mx-5 lg:mx-16 font-montserrat font-bold text-xl lg:text-3xl"> 
         Project
       </h1>
       <div className="mx-5 lg:mx-16">

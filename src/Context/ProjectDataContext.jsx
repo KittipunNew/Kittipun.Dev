@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 import imageCard from '../assets/project1/img1.png';
 import imageCard2 from '../assets/project2/Screenshot 2025-03-02 171839.png';
+import imageCard3 from '../assets/Gearup/Screenshot 2025-05-19 172750.png';
 
 export const ProjectDataContext = createContext();
 
@@ -8,35 +9,6 @@ export const ProjectDataProvider = ({ children }) => {
   const projects = [
     {
       id: 1,
-      name: 'Online Furniture Ecommerce (Group Project)',
-      description:
-        'An Ecommerce platform for online furniture sales that allows users to view newly arrived products, browse the complete furniture catalog, and purchase furniture of interest.',
-      imgCard: imageCard,
-      overview:
-        'This project is a minimalist-style furniture e-commerce website developed using the MERN Stack (MongoDB, Express.js, React.js, and Node.js) to provide a seamless and user-friendly shopping experience. Users can browse new arrivals, add products to their cart, and complete their purchases with ease.',
-      keyFeatures: [
-        'Responsive design for all screen sizes',
-        'Homepage: Displays new arrivals',
-        'Product Listing Page: Shows all available products',
-        'Authentication: Login and registration system for customers',
-        'Shopping Cart: Add products to the cart',
-        'Chatbot: Automated customer support system',
-      ],
-      link: 'https://orbit-rex-living.vercel.app/',
-      github: 'https://github.com/orgs/VelociKepler/repositories',
-      technologies: [
-        'React',
-        'TailwindCSS',
-        'MaterialUI',
-        'Node.js',
-        'Express.js',
-        'Mongoose',
-        'JWT',
-        'MongoDB',
-      ],
-    },
-    {
-      id: 2,
       name: 'To-Do List Web Application (Personal Projects)',
       description:
         'A simple and user-friendly platform for keeping track of to-do lists, with the ability to securely manage your personal tasks.',
@@ -60,6 +32,39 @@ export const ProjectDataProvider = ({ children }) => {
         'Mongoose',
         'JWT',
         'MongoDB',
+      ],
+    },
+    {
+      id: 2,
+      name: 'GearUp Tech E-commerce (Personal Projects)',
+      description:
+        'A responsive e-commerce website for computers and IT accessories with user authentication, wishlist, cart, and Stripe/COD payment.',
+      imgCard: imageCard3,
+      overview:
+        'GearUp Tech E-commerce is a comprehensive web application for selling computers and IT accessories. It features user authentication via Firebase, product browsing by category, bestseller highlights, advanced product filtering and search, wishlist and cart management, and order placement with Stripe or Cash on Delivery (COD). The profile section allows users to manage their account, addresses, wishlist, and order status. The cart page supports quantity adjustments, address selection, and payment method choice. The website is fully responsive and optimized for all device sizes.',
+      keyFeatures: [
+        'Login/Logout system using Firebase Authentication',
+        'Product listing page with category filtering',
+        'Dynamic search and product filtering',
+        'Wishlist, Add to Cart, and Checkout system',
+        'User profile page with account management',
+        'Responsive design compatible with mobile and tablets',
+      ],
+      link: 'https://gearuptech.vercel.app/',
+      github:
+        'https://github.com/KittipunNew/GearUp-Tech/tree/main?tab=readme-ov-file#',
+      technologies: [
+        'React',
+        'TailwindCSS',
+        'DaisyUI',
+        'Node.js',
+        'Express.js',
+        'Mongoose',
+        'firebase',
+        'MongoDB',
+        'stripe',
+        'cloudinary',
+        'multer',
       ],
     },
   ];
