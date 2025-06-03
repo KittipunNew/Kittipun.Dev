@@ -37,22 +37,23 @@ const AboutMe = forwardRef(function (props, ref) {
             I am a Full Stack Developer.
           </h1>
           <p className="font-montserrat text-sm mt-5 lg:text-lg">
-            Hi, my name is New. I’m a Junior Full Stack Developer with a strong
-            passion for coding and software development. I started learning by
-            myself and later joined an intensive full-stack bootcamp, where I
-            gained hands-on experience with technologies like HTML, CSS,
-            JavaScript, React, Node.js, and MongoDB. I also had the opportunity
-            to work closely with teammates, which helped me improve both
-            technical and soft skills such as communication, problem-solving,
-            and time management. So far, I’ve built practical projects like a
-            complete To-Do List application with user authentication, and an
-            E-commerce website that supports various features from product
-            display to backend management. My career goal is to grow steadily as
-            a Full Stack Developer — deepening my expertise in both frontend and
-            backend technologies, while also expanding my knowledge into broader
-            areas of software development. I believe every challenge is an
-            opportunity to learn, and I look forward to being part of a team
-            that creates meaningful and impactful solutions.
+            Hi, my name is Kittipun I’m a Junior Full Stack Developer with a
+            strong passion for coding and software development. I started
+            learning by myself and later joined an intensive full-stack
+            bootcamp, where I gained hands-on experience with technologies like
+            HTML, CSS, JavaScript, React, Node.js, and MongoDB. I also had the
+            opportunity to work closely with teammates, which helped me improve
+            both technical and soft skills such as communication,
+            problem-solving, and time management. So far, I’ve built practical
+            projects like a complete To-Do List application with user
+            authentication, and an E-commerce website that supports various
+            features from product display to backend management. My career goal
+            is to grow steadily as a Full Stack Developer — deepening my
+            expertise in both frontend and backend technologies, while also
+            expanding my knowledge into broader areas of software development. I
+            believe every challenge is an opportunity to learn, and I look
+            forward to being part of a team that creates meaningful and
+            impactful solutions.
           </p>
         </div>
       </div>
