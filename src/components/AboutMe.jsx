@@ -37,16 +37,22 @@ const AboutMe = forwardRef(function (props, ref) {
             I am a Full Stack Developer.
           </h1>
           <p className="font-montserrat text-sm mt-5 lg:text-lg">
-            I’m a full-stack developer passionate about creating smooth and
-            dynamic web experiences, especially in building full-stack
-            applications using the MERN Stack (MongoDB, Express, ReactJS,
-            Node.js). I also have a strong foundation in front-end technologies
-            like TailwindCSS and JavaScript. I graduated from the Junior
-            Software Development course at Generation Thailand, where I worked
-            on an e-commerce furniture store project with my team. This
-            experience helped me hone my problem-solving skills and learn how to
-            collaborate effectively in a team. You can check out some of my
-            projects on GitHub.
+            Hi, my name is New. I’m a Junior Full Stack Developer with a strong
+            passion for coding and software development. I started learning by
+            myself and later joined an intensive full-stack bootcamp, where I
+            gained hands-on experience with technologies like HTML, CSS,
+            JavaScript, React, Node.js, and MongoDB. I also had the opportunity
+            to work closely with teammates, which helped me improve both
+            technical and soft skills such as communication, problem-solving,
+            and time management. So far, I’ve built practical projects like a
+            complete To-Do List application with user authentication, and an
+            E-commerce website that supports various features from product
+            display to backend management. My career goal is to grow steadily as
+            a Full Stack Developer — deepening my expertise in both frontend and
+            backend technologies, while also expanding my knowledge into broader
+            areas of software development. I believe every challenge is an
+            opportunity to learn, and I look forward to being part of a team
+            that creates meaningful and impactful solutions.
           </p>
         </div>
       </div>
